@@ -45,7 +45,8 @@ nav {
     align-items: center;
 }
 
-.navTitle_title a {
+.navTitle_title>a {
+    border: 1px solid red;
     width: 94px;
     height: 44px;
     display: flex;
@@ -71,11 +72,43 @@ nav {
     z-index: 2;
 }
 
+.drop_wrap3 {
+    border: 1px solid red;
+    position: absolute;
+    top: 69px;
+    left: 352px;
+    width: 172px;
+    height: 139px;
+    background: url("../../img/cut/首页/矩形674.png") no-repeat;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+    z-index: 2;
+}
+
 .drop_wrap2 {
     border: 1px solid red;
     position: absolute;
     top: 69px;
     left: 224px;
+    width: 172px;
+    height: 139px;
+    background: url("../../img/cut/首页/矩形674拷贝.png") no-repeat;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+    z-index: 2;
+}
+
+.drop_wrap4 {
+    border: 1px solid red;
+    position: absolute;
+    top: 69px;
+    left: 482px;
     width: 172px;
     height: 139px;
     background: url("../../img/cut/首页/矩形674拷贝.png") no-repeat;
@@ -127,8 +160,8 @@ nav {
 .drop_text3 .text3 {
     color: #8a8e9a;
     position: absolute;
-    top: 12px;
-    left: 56px;
+    top: 0px;
+    left: 0px;
 }
 
 .drop_text3:hover .prototype {
@@ -162,6 +195,47 @@ nav {
     display: block;
 }
 
+#navtitle3:hover .drop_wrap3 {
+    display: flex;
+    display: block;
+}
+
+#navtitle4:hover .drop_wrap4 {
+    display: flex;
+    display: block;
+}
+
 .home:hover {
     color: orange;
+}
+
+.text3 {
+    border: 1px solid red;
+    width: 154px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.text2 {
+    border: 1px solid red;
+    width: 154px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8a8e9a;
+}
+
+.drop_text3:hover .text2 {
+    color: orange;
+}
+
+.text3_son {
+    position: absolute;
+    top: 12px;
+    left: 50px;
+    z-index: 55555555;
 }

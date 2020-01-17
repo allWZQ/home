@@ -324,7 +324,11 @@ html {
 }
 
 .avtive {
-    background-color: orange;
+    background-image: linear-gradient(0deg,
+            #f8b911 0%,
+            #ffd25b 100%),
+        linear-gradient(#ffffff,
+            #ffffff);
     cursor: pointer;
 }
 

@@ -9,11 +9,11 @@ function App() {
       <Nav />
       <Switch>
         {/* exact是绝对匹配 /后面的都匹配不到*/}
-        <Route path="/about/:id" component={About} />
+        <Route path="/about/" component={About} />
         <Route path="/home" component={Home} />
-        <Route path="/sever" componetn={Sever} />
         <Route path="/info" component={Info} />
         <Route path="/join" component={Join} />
+        <Route path="/sever" componetn={Sever} />
         <Route path="/404" component={NotFound} />
         <Redirect to="/home" from="/" exact />
         <Redirect to="/404" />
