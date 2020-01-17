@@ -6,3 +6,4 @@ export { default as Info } from "./Info/index";
 export { default as Home } from "./Home/index";
 export { default as NotFound } from "./NotFound/index";
 export { default as Join } from "./Join/index";
+export { default as Sever } from "./Sever/index";

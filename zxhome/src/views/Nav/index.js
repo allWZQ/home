@@ -21,110 +21,108 @@ import join1 from "../../img/cut/首页/zhaopin.png";
 import join1copy from "../../img/cut/首页/zhaopin拷贝.png";
 import join2 from "../../img/cut/首页/drxx51.png";
 import join2copy from "../../img/cut/首页/drxx51拷贝.png";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+
 class Nav extends React.Component {
+  constructor(props) {
+    super();
+    this.state = {
+      isNav: 0
+    };
+  }
+  handleNavClick(event) {
+    this.setState({
+      isNav: Number(event.currentTarget.getAttribute("index"))
+    });
+  }
   render() {
+    let data = {
+      nav: [
+        {
+          path: "/home",
+          name: "首页"
+        },
+        {
+          id: "navtitle1",
+          path: "/sever",
+          name: "产品服务"
+        },
+        {
+          id: "navtitle2",
+          path: "/info",
+          name: "咨询中心"
+        },
+        {
+          id: "navtitle3",
+          path: "/about/1",
+          name: "关于我们"
+        },
+        {
+          id: "navtitle4",
+          path: "/join",
+          name: "加入我们"
+        }
+      ]
+    };
     return (
       <nav>
         <div className="zxlog">
           <img src={logo} alt="" />
         </div>
-        <ul>
-          <Link to="/home">
-            <li className="home">首页</li>
-          </Link>
-        </ul>
-        <ul>
-          <li className="serve">
-            <span className="title">产品服务</span>
-            <div className="drop_wrap">
-              <div className="drop_wrap_n">
-                <div className="drop_text3">
-                  <img className="prototype" src={servelog1} alt="" />
-                  <img className="copy3" src={servelog1copy} alt="" />
-                  <span className="text3">菜鸟数据魔方</span>
+        <div className="navTitle_wrap">
+          {data.nav.map((value, index) => {
+            return (
+              <span
+                key={index}
+                index={index}
+                className={this.state.isNav === index ? "avtive" : ""}
+                id={value.id}
+                onClick={this.handleNavClick.bind(this)}
+              >
+                <div className="navTitle_title">
+                  <NavLink to={value.path}>{value.name}</NavLink>
                 </div>
-                <div className="drop_text3">
-                  <img className="prototype" src={servelog2} alt="" />
-                  <img className="copy3" src={servelog2copy} alt="" />
-                  <span className="text3">酷鸟卖家助手</span>
+                <li className="serve">
+                  <div className="drop_wrap">
+                    <div className="drop_wrap_n">
+                      <div className="drop_text3">
+                        <img className="prototype" src={servelog1} alt="" />
+                        <img className="copy3" src={servelog1copy} alt="" />
+                        <Link to="/sever">
+                          <span className="text3">菜鸟数据魔方</span>
+                        </Link>
+                      </div>
+                      <div className="drop_text3">
+                        <img className="prototype" src={servelog2} alt="" />
+                        <img className="copy3" src={servelog2copy} alt="" />
+                        <span className="text3">酷鸟卖家助手</span>
+                      </div>
+                      <div className="drop_text3">
+                        <img className="prototype" src={servelog3} alt="" />
+                        <img className="copy3" src={servelog3copy} alt="" />
+                        <span className="text3">超级浏览器</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <div className="drop_wrap2">
+                  <div className="drop_wrap_n">
+                    <div className="drop_text3">
+                      <img className="prototype" src={consult1} alt="" />
+                      <img className="copy3" src={consult1copy} alt="" />
+                      <span className="text3">公司动态</span>
+                    </div>
+                    <div className="drop_text3">
+                      <img className="prototype" src={consult2} alt="" />
+                      <img className="copy3" src={consult2copy} alt="" />
+                      <span className="text3">媒体互动</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="drop_text3">
-                  <img className="prototype" src={servelog3} alt="" />
-                  <img className="copy3" src={servelog3copy} alt="" />
-                  <span className="text3">超级浏览器</span>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li className="serve">
-            <Link to="/info">
-              <span className="title">咨询中心</span>
-            </Link>
-            <div className="drop_wrap2">
-              <div className="drop_wrap_n">
-                <div className="drop_text3">
-                  <img className="prototype" src={consult1} alt="" />
-                  <img className="copy3" src={consult1copy} alt="" />
-                  <span className="text3">公司动态</span>
-                </div>
-                <div className="drop_text3">
-                  <img className="prototype" src={consult2} alt="" />
-                  <img className="copy3" src={consult2copy} alt="" />
-                  <span className="text3">媒体互动</span>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li className="serve">
-            <Link to="/about/1">
-              <span className="title">关于我们</span>
-            </Link>
-            <div className="drop_wrap">
-              <div className="drop_wrap_n">
-                <div className="drop_text3">
-                  <img className="prototype" src={about1} alt="" />
-                  <img className="copy3" src={aboutcopy1} alt="" />
-                  <Link to="/about/1">
-                    <span className="text3">公司简介</span>{" "}
-                  </Link>
-                </div>
-                <div className="drop_text3">
-                  <img className="prototype" src={about2} alt="" />
-                  <img className="copy3" src={about2copy} alt="" />
-                  <span className="text3">企业文化</span>
-                </div>
-                <div className="drop_text3">
-                  <img className="prototype" src={about3} alt="" />
-                  <img className="copy3" src={about3copy} alt="" />
-                  <span className="text3">联系我们</span>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li className="serve">
-            <Link to="/join">
-              <span className="title"> 加入我们</span>
-            </Link>
-            <div className="drop_wrap2">
-              <div className="drop_wrap_n">
-                <div className="drop_text3">
-                  <img className="prototype" src={join1} alt="" />
-                  <img className="copy3" src={join1copy} alt="" />
-                  <span className="text3">社会招聘</span>
-                </div>
-                <div className="drop_text3">
-                  <img className="prototype" src={join2} alt="" />
-                  <img className="copy3" src={join2copy} alt="" />
-                  <span className="text3">校园招聘</span>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+              </span>
+            );
+          })}
+        </div>
       </nav>
     );
   }

@@ -1,7 +1,26 @@
 import React from "react";
-
-const Introduce = () => {
-  return <div className="main_box1">3333</div>;
+import mainlog2 from "../../../img/cut/其他/建筑.png";
+const Culture = () => {
+  return (
+    <div className="main_box1">
+      <div className="main_box2">
+        <div className="main2">
+          <img src={mainlog2} alt="" />
+          <h1>团队理念</h1>
+          <span>
+            路刚开始，这一次，我们奔着梦想带着激情！对坚持梦想的人来说，人生是一次次出发，坚持走下去，总能看到别人看不到的风景。在人生旅途中，旅途能走多远，取决于与谁同行，走得越远就越接近内心，走得越远就越知道自己的梦想应该绽于何处，坚持梦想者的人生是清晰明了的。我们选择与坚持梦想者同行，见证他们的梦想绽放，与他们共同分享成功的喜悦，一同进入豁然开朗的新境界。
+          </span>
+          <span>
+            资讯路上，我们与坚持梦想者同行！资讯秉承“与坚持梦想者同行”的企业文化，在重视个人才能的同时，更加注重同事间的亲情和团队合作力，网罗了大批怀揣梦想的优秀人才，公司具有互敬、包容的人文气息，形成了积极进取、不断创新的工作氛围，为员工打造了一个各展所长的最佳展示平台。
+          </span>
+          <h1>我们的态度</h1>
+          <span>
+            端正态度，共铸资讯梦。工作不是生活的全部，好的工作是快乐生活的保障，而充满幸福感的生活能够促进工作质量的提高。保持创新精神，做高附加价值产品，在高效工作与高回报的前提下，实现事业与家庭平衡，打造拥有高幸福指数的现代化团队。
+          </span>
+        </div>
+      </div>
+    </div>
+  );
 };
 
-export default Introduce;
+export default Culture;
