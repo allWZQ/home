@@ -30,7 +30,7 @@ class Nav extends React.Component {
           <img src={logo} alt="" />
         </div>
         <ul>
-          <Link to="/Home">
+          <Link to="/home">
             <li className="home">首页</li>
           </Link>
         </ul>
@@ -57,51 +57,58 @@ class Nav extends React.Component {
               </div>
             </div>
           </li>
-          <Link to="/Info">
-            <li className="serve">
-              <span className="title">咨询中心</span>
-              <div className="drop_wrap2">
-                <div className="drop_wrap_n">
-                  <div className="drop_text3">
-                    <img className="prototype" src={consult1} alt="" />
-                    <img className="copy3" src={consult1copy} alt="" />
-                    <span className="text3">公司动态</span>
-                  </div>
-                  <div className="drop_text3">
-                    <img className="prototype" src={consult2} alt="" />
-                    <img className="copy3" src={consult2copy} alt="" />
-                    <span className="text3">媒体互动</span>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </Link>
-          <Link to="/about">
-            <li className="serve">
-              <span className="title">关于我们</span>
-              <div className="drop_wrap">
-                <div className="drop_wrap_n">
-                  <div className="drop_text3">
-                    <img className="prototype" src={about1} alt="" />
-                    <img className="copy3" src={aboutcopy1} alt="" />
-                    <span className="text3">公司简介</span>
-                  </div>
-                  <div className="drop_text3">
-                    <img className="prototype" src={about2} alt="" />
-                    <img className="copy3" src={about2copy} alt="" />
-                    <span className="text3">企业文化</span>
-                  </div>
-                  <div className="drop_text3">
-                    <img className="prototype" src={about3} alt="" />
-                    <img className="copy3" src={about3copy} alt="" />
-                    <span className="text3">联系我们</span>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </Link>
+
           <li className="serve">
-            <span className="title"> 加入我们</span>
+            <Link to="/info">
+              <span className="title">咨询中心</span>
+            </Link>
+            <div className="drop_wrap2">
+              <div className="drop_wrap_n">
+                <div className="drop_text3">
+                  <img className="prototype" src={consult1} alt="" />
+                  <img className="copy3" src={consult1copy} alt="" />
+                  <span className="text3">公司动态</span>
+                </div>
+                <div className="drop_text3">
+                  <img className="prototype" src={consult2} alt="" />
+                  <img className="copy3" src={consult2copy} alt="" />
+                  <span className="text3">媒体互动</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li className="serve">
+            <Link to="/about/1">
+              <span className="title">关于我们</span>
+            </Link>
+            <div className="drop_wrap">
+              <div className="drop_wrap_n">
+                <div className="drop_text3">
+                  <img className="prototype" src={about1} alt="" />
+                  <img className="copy3" src={aboutcopy1} alt="" />
+                  <Link to="/about/1">
+                    <span className="text3">公司简介</span>{" "}
+                  </Link>
+                </div>
+                <div className="drop_text3">
+                  <img className="prototype" src={about2} alt="" />
+                  <img className="copy3" src={about2copy} alt="" />
+                  <span className="text3">企业文化</span>
+                </div>
+                <div className="drop_text3">
+                  <img className="prototype" src={about3} alt="" />
+                  <img className="copy3" src={about3copy} alt="" />
+                  <span className="text3">联系我们</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li className="serve">
+            <Link to="/join">
+              <span className="title"> 加入我们</span>
+            </Link>
             <div className="drop_wrap2">
               <div className="drop_wrap_n">
                 <div className="drop_text3">

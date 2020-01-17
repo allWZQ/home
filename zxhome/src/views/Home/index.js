@@ -20,6 +20,14 @@ import sever13 from "../../img/cut/首页/全站点服务.png";
 import sever14 from "../../img/cut/首页/精英团队.png";
 import sever15 from "../../img/cut/首页/多机构支持.png";
 import sever16 from "../../img/cut/首页/合作/矢量智能对象.png";
+import sever17 from "../../img/cut/首页/合作/aws.png";
+import sever18 from "../../img/cut/首页/合作/ed67c082eb608e62cd80c23e0a244e93.png";
+import sever19 from "../../img/cut/首页/合作/亚马逊.png";
+import sever20 from "../../img/cut/首页/合作/ebay.png";
+import sever21 from "../../img/cut/首页/合作/wish_logo_title_blue-4.png";
+import sever22 from "../../img/cut/首页/合作/中国邮政.png";
+import sever23 from "../../img/cut/首页/合作/CHINAEVERBRIGHTBANK.png";
+import sever24 from "../../img/cut/首页/合作/速卖通.png";
 const Home = () => {
   return (
     <div>
@@ -166,44 +174,35 @@ const Home = () => {
               <div>合作伙伴</div>
               <div className="partner_logo">
                 <div>
-                  <img src="" alt="" />
+                  <img src={sever16} alt="" />
                 </div>
                 <div>
-                  <img src="../../img/cut/首页/合作/aws.png" alt="" />
+                  <img src={sever17} alt="" />
                 </div>
                 <div>
-                  <img
-                    src="../../img/cut/首页/合作/ed67c082eb608e62cd80c23e0a244e93.png"
-                    alt=""
-                  />
+                  <img src={sever18} alt="" />
                 </div>
               </div>
               <div className="partner_logo">
                 <div className="partner_img1">
-                  <img src="../../img/cut/首页/合作/亚马逊.png" alt="" />
+                  <img src={sever19} alt="" />
                 </div>
                 <div className="partner_img2">
-                  <img src="../../img/cut/首页/合作/ebay.png" alt="" />
+                  <img src={sever20} alt="" />
                 </div>
                 <div className="partner_img3">
-                  <img
-                    src="../../img/cut/首页/合作/wish_logo_title_blue-4.png"
-                    alt=""
-                  />
+                  <img src={sever21} alt="" />
                 </div>
               </div>
               <div className="partner_logo">
                 <div>
-                  <img src="../../img/cut/首页/合作/中国邮政.png" alt="" />
+                  <img src={sever22} alt="" />
                 </div>
                 <div>
-                  <img
-                    src="../../img/cut/首页/合作/CHINAEVERBRIGHTBANK.png"
-                    alt=""
-                  />
+                  <img src={sever23} alt="" />
                 </div>
                 <div>
-                  <img src="../../img/cut/首页/合作/速卖通.png" alt="" />
+                  <img src={sever24} alt="" />
                 </div>
               </div>
             </div>

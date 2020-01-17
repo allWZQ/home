@@ -37,7 +37,7 @@ footer {
 .footer_wrap1>div:nth-child(4) {
     border: 1px solid red;
     margin-right: 81px;
-    width: 65px;
+    width: 67px;
     height: 105px;
     position: relative;
     top: 5px;
@@ -47,7 +47,7 @@ footer {
 
 .footer_wrap1>div:nth-child(5) {
     border: 1px solid red;
-    width: 65px;
+    width: 66px;
     height: 79px;
     position: relative;
     top: -6px;
