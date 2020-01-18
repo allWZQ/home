@@ -1,6 +1,6 @@
 import React from "react";
 import "../About/About.css";
-import { NavLink, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import aboutLog from "../../img/cut/其他/图层7副本.png";
 import Introduce from "../About/Introduce/index";
 import Contact from "../About/Contact/index";
@@ -10,13 +10,45 @@ class About extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isSelect: 0
+      isSelect: "/about/1"
     };
   }
-  handleAboutClick(event) {
-    this.setState({
-      isSelect: Number(event.currentTarget.getAttribute("Index"))
+  componentDidMount() {
+    const { history } = this.props;
+
+    history.listen(location => {
+      console.log(location.pathname.indexOf("about"));
+      if (location.pathname.indexOf("about")) {
+        this.setState({
+          isSelect: location.pathname
+        });
+      }
     });
+  }
+  componentWillMount() {
+    this._loadisSelect();
+  }
+  _saveisSelect(isSelect) {
+    sessionStorage.setItem("isSelect", isSelect);
+  }
+  _loadisSelect() {
+    const isSelect = sessionStorage.getItem("isSelect");
+    if (isSelect) {
+      this.setState({
+        isSelect
+      });
+    }
+  }
+  handleAboutClick(value) {
+    const { history } = this.props;
+    console.log(history);
+    history.push(value.path);
+    console.log(history.location.pathname);
+    console.log(value);
+    this.setState({
+      isSelect: history.location.pathname
+    });
+    this._saveisSelect(value.path);
   }
   render() {
     let data = {
@@ -43,16 +75,18 @@ class About extends React.Component {
             <div className="main_menu">
               {data.item.map((value, index) => {
                 return (
-                  <NavLink to={value.path} key={index}>
-                    <span
-                      index={index}
-                      className={this.state.isSelect === index ? "avtive" : ""}
-                      id="main_name"
-                      onClick={this.handleAboutClick.bind(this)}
-                    >
-                      <div>{value.name}</div>
-                    </span>
-                  </NavLink>
+                  <span
+                    key={index}
+                    className={
+                      this.state.isSelect === `/about/${index + 1}`
+                        ? "avtive"
+                        : ""
+                    }
+                    id="main_name"
+                    onClick={this.handleAboutClick.bind(this, value)}
+                  >
+                    <div>{value.name}</div>
+                  </span>
                 );
               })}
             </div>

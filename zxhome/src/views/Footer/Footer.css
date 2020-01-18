@@ -1,6 +1,5 @@
 /* 底部 */
 footer {
-    border: 1px solid red;
     height: 280px;
     width: 100%;
     min-width: 960px;
@@ -15,7 +14,6 @@ footer {
 }
 
 .footer_wrap1>div:nth-child(2) {
-    border: 1px solid red;
     margin-right: 61px;
     width: 340px;
     height: 93px;
@@ -24,7 +22,6 @@ footer {
 }
 
 .footer_wrap1>div:nth-child(3) {
-    border: 1px solid red;
     margin-right: 61px;
     width: 101px;
     height: 109px;
@@ -35,7 +32,6 @@ footer {
 }
 
 .footer_wrap1>div:nth-child(4) {
-    border: 1px solid red;
     margin-right: 81px;
     width: 68px;
     height: 105px;
@@ -46,7 +42,6 @@ footer {
 }
 
 .footer_wrap1>div:nth-child(5) {
-    border: 1px solid red;
     width: 69px;
     height: 79px;
     position: relative;
@@ -57,7 +52,6 @@ footer {
 
 footer>div:nth-child(1) {
     margin-top: 30px;
-    border: 1px solid red;
     width: 100%;
     flex: 4 0 172px;
     display: flex;
@@ -67,7 +61,6 @@ footer>div:nth-child(1) {
 
 footer>div:nth-child(2) {
     margin-bottom: 25px;
-    border: 1px solid red;
     border-top: 2px solid #e6e6e6;
     width: 100%;
     flex: 1 0 47px;

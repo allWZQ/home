@@ -1,7 +1,5 @@
 import React from "react";
 import joinLogo from "../../img/cut/其他/充实工作，快乐生活.png";
-import upLogo from "../../img/cut/其他/上.png";
-import upLogo1copy from "../../img/cut/其他/上高亮.png";
 import downLogo from "../../img/cut/其他/下.png";
 import downLogo1copy from "../../img/cut/其他/下高亮.png";
 import "./Join.css";
@@ -18,7 +16,7 @@ const Join = () => {
         <div className="join_box2">
           <div className="join_box_son1">
             <div className="join_text3">
-              <div class="join_round"></div>
+              <div className="join_round"></div>
               <h1>Java开发工程师</h1>
             </div>
             <div className="join_text4">
@@ -34,7 +32,7 @@ const Join = () => {
           <div className="join_box_son2">
             <div className="join_box_son4">
               <div className="join_text3">
-                <div class="join_round"></div>
+                <div className="join_round"></div>
                 <h1>Java开发工程师</h1>
               </div>
               <div className="join_text4">
@@ -84,7 +82,7 @@ const Join = () => {
           <div className="join_box_son1">
             <div className="join_box_son1">
               <div className="join_text3">
-                <div class="join_round"></div>
+                <div className="join_round"></div>
                 <h1>Java开发工程师</h1>
               </div>
               <div className="join_text4">
@@ -98,7 +96,17 @@ const Join = () => {
               </div>
             </div>
           </div>
-          <div className="join_box_son3"></div>
+          <div className="join_box_son3">
+            <div className="paging_box2">
+              <div className="paging_main2">
+                <div className="paging1">上一页</div>
+                <div className="paging1_number">1</div>
+                <div className="paging1_number">2</div>
+                <div className="paging1_number">3</div>
+                <div className="paging1">下一页</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -25,15 +25,36 @@ import { NavLink, Link } from "react-router-dom";
 
 class Nav extends React.Component {
   constructor(props) {
-    super();
+    super(props);
     this.state = {
       isNav: 0
     };
   }
+  componentWillMount() {
+    this._localNav();
+  }
+  _saveisNav(isNav) {
+    sessionStorage.setItem("isNav", isNav);
+  }
+  _localNav() {
+    const isNav = sessionStorage.getItem("isNav");
+    console.log(isNav);
+    if (isNav) {
+      this.setState({
+        isNav: Number(isNav)
+      });
+    }
+  }
+  _saveisSelect(isSelect) {
+    sessionStorage.setItem("isSelect", isSelect);
+  }
   handleNavClick(event) {
+    console.log(event.currentTarget.getAttribute("index"));
     this.setState({
       isNav: Number(event.currentTarget.getAttribute("index"))
     });
+    this._saveisNav(event.currentTarget.getAttribute("index"));
+    this._saveisSelect("/about/1");
   }
   render() {
     let data = {

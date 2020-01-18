@@ -8,7 +8,6 @@ main {
 }
 
 .main1_wrap {
-    border: 1px solid red;
     height: 100%;
     width: 100%;
     display: flex;
@@ -34,7 +33,6 @@ main {
 #main_name {
     width: 188px;
     height: 70px;
-    border: 1px solid red;
     font-family: PingFang-SC-Bold;
     font-size: 18px;
     color: #7d7d7d;
@@ -46,14 +44,12 @@ main {
 .main_box1 {
     width: 776px;
     height: 730px;
-    border: 1px solid red;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
 }
 
 .main1 {
-    border: 1px solid red;
     width: 776px;
     height: 672px;
     background-color: #ffffff;
@@ -74,7 +70,6 @@ main {
 }
 
 .main1 span {
-    border: 1px solid red;
     width: 714px;
     height: 177px;
     font-family: PingFang-SC-Regular;
@@ -95,7 +90,6 @@ main {
 .main_box2 {
     width: 776px;
     height: 730px;
-    border: 1px solid red;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -160,7 +154,6 @@ main {
 .main_box3 {
     width: 776px;
     height: 600px;
-    border: 1px solid red;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -180,7 +173,6 @@ main {
 }
 
 .main3_wrap1 {
-    border: 1px solid red;
     width: 715px;
     height: 240px;
     display: flex;
@@ -273,7 +265,6 @@ main {
 }
 
 .main3_3_box {
-    border: 1px solid red;
     width: 715px;
     height: 77px;
     display: flex;

@@ -1,7 +1,6 @@
 /* 导航栏 */
 nav {
     margin: 0 auto;
-    border: 1px solid red;
     width: 960px;
     height: 96px;
     box-shadow: 1 0 0 rgba(0, 0, 0, 0.1);
@@ -18,7 +17,6 @@ nav {
 .navTitle_wrap {
     width: 580px;
     height: 96px;
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +44,6 @@ nav {
 }
 
 .navTitle_title>a {
-    border: 1px solid red;
     width: 94px;
     height: 44px;
     display: flex;
@@ -57,7 +54,6 @@ nav {
 
 /* 下拉框 */
 .drop_wrap {
-    border: 1px solid red;
     position: absolute;
     top: 69px;
     left: 100px;
@@ -73,7 +69,6 @@ nav {
 }
 
 .drop_wrap3 {
-    border: 1px solid red;
     position: absolute;
     top: 69px;
     left: 352px;
@@ -89,7 +84,6 @@ nav {
 }
 
 .drop_wrap2 {
-    border: 1px solid red;
     position: absolute;
     top: 69px;
     left: 224px;
@@ -105,7 +99,6 @@ nav {
 }
 
 .drop_wrap4 {
-    border: 1px solid red;
     position: absolute;
     top: 69px;
     left: 482px;
@@ -121,7 +114,6 @@ nav {
 }
 
 .drop_wrap_n {
-    border: 1px solid red;
     margin: 10px;
     width: 154px;
     display: flex;
@@ -136,7 +128,6 @@ nav {
 }
 
 .drop_text3 {
-    border: 1px solid red;
     width: 154px;
     height: 40px;
     display: flex;
@@ -210,7 +201,6 @@ nav {
 }
 
 .text3 {
-    border: 1px solid red;
     width: 154px;
     height: 40px;
     display: flex;
@@ -220,7 +210,6 @@ nav {
 }
 
 .text2 {
-    border: 1px solid red;
     width: 154px;
     height: 40px;
     display: flex;

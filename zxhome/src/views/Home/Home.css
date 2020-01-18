@@ -26,7 +26,6 @@
     position: absolute;
     top: -25px;
     left: -27px;
-    border: 1px solid red;
     width: 58px;
     height: 58px;
     background-color: #ffffff;
@@ -42,7 +41,6 @@
 }
 
 .make_wrap {
-    border: 1px solid red;
     width: 1000px;
     height: 340px;
     margin: 80px 0px;
@@ -53,7 +51,6 @@
 }
 
 .make_title {
-    border: 1px solid red;
     height: 30px;
     font-family: MicrosoftYaHei;
     font-size: 30px;
@@ -63,7 +60,6 @@
 }
 
 .make_main {
-    border: 1px solid red;
     height: 248px;
     width: 1000px;
     display: flex;
@@ -72,8 +68,7 @@
 }
 
 .make_main .make_box {
-    border: 1px solid red;
-    flex: 1 0 180px;
+    flex: 1 0 201px;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -81,7 +76,6 @@
 }
 
 .make_data {
-    border: 1px solid red;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -124,7 +118,6 @@
     position: absolute;
     top: -830px;
     left: -30px;
-    border: 1px solid red;
     width: 58px;
     height: 70px;
     border-radius: 50% 50% 0% 0%;
@@ -134,7 +127,6 @@
 
 .sever_wrap {
     position: absolute;
-    border: 1px solid red;
     top: 60px;
     width: 600px;
     height: 550px;
@@ -148,14 +140,12 @@
     font-size: 30px;
     font-weight: bold;
     color: #333e53;
-    border: 1px solid red;
     flex: 1;
     display: flex;
     justify-content: center;
 }
 
 .serve_box2 {
-    border: 1px solid red;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -163,7 +153,6 @@
 }
 
 .serve_box3 {
-    border: 1px solid red;
     flex: 2;
 }
 
@@ -182,13 +171,11 @@
 }
 
 .serve_box3 {
-    border: 1px solid red;
     display: flex;
     flex-flow: column;
 }
 
 .serve_box3>div {
-    border: 1px solid red;
     flex: 1;
     display: flex;
     justify-content: space-evenly;
@@ -235,7 +222,6 @@
     position: absolute;
     top: -90px;
     left: -29px;
-    border: 1px solid red;
     width: 58px;
     height: 80px;
     background-color: #ffffff;
@@ -245,7 +231,6 @@
 
 .about_wrap {
     position: relative;
-    border: 1px solid red;
     top: 0px;
     left: 0px;
     width: 812px;
@@ -258,7 +243,6 @@
 
 .about_box1 {
     flex: 1;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -273,7 +257,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
     font-family: MicrosoftYaHei;
     font-size: 17px;
     color: #393f4d;
@@ -282,7 +265,6 @@
 
 .about_box3 {
     flex: 4;
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
 }
@@ -290,7 +272,6 @@
 .about_box3>div {
     height: 165px;
     width: 155px;
-    border: 1px solid red;
     text-align: center;
     font-weight: bold;
     font-family: MicrosoftYaHei;
@@ -327,7 +308,6 @@
     position: absolute;
     top: -35px;
     left: -29px;
-    border: 1px solid red;
     width: 58px;
     height: 80px;
     background-color: #f6faff;
@@ -338,7 +318,6 @@
 .partner_wrap {
     min-width: 960px;
     width: 100vw;
-    border: 1px solid red;
     height: 620px;
     background-color: #f6faff;
     display: flex;
@@ -347,7 +326,6 @@
 }
 
 .partner_box {
-    border: 1px solid red;
     width: 861px;
     height: 482px;
     display: flex;
@@ -355,7 +333,6 @@
 }
 
 .partner_box>div:nth-child(1) {
-    border: 1px solid red;
     flex: 1;
     font-family: MicrosoftYaHei-Bold;
     font-size: 24px;
@@ -366,7 +343,6 @@
 }
 
 .partner_box>div:nth-child(2) {
-    border: 1px solid red;
     flex: 2;
     display: flex;
     justify-content: space-between;
@@ -374,7 +350,6 @@
 }
 
 .partner_box>div:nth-child(3) {
-    border: 1px solid red;
     flex: 2;
     display: flex;
     justify-content: space-between;
@@ -382,7 +357,6 @@
 }
 
 .partner_box>div:nth-child(4) {
-    border: 1px solid red;
     flex: 2;
     display: flex;
     justify-content: space-between;
